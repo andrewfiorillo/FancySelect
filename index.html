@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="css/default.css" type="text/css" />
+	<link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$.fn.fancyselect = function() {
+			    this.each(function(i,select){
+			        $(select).wrap('<span class="fancyselect" />');
+			        $(select).before('<span class="arrows" />');
+			        $(select).focus(function(){
+			            $(this).parent('span').addClass('focus');
+			        });
+			        $(select).blur(function(){
+			            $(this).parent('span').removeClass('focus');
+			        });
+			    });
+			};
+		
+			$("#wrapper select").fancyselect();
+			
+		});
+	</script>
+	
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+    <select>
+        <option>One</option>
+        <option>Two</option>
+        <option>The</option>
+    </select>
+    
+    &nbsp;
+    
+    <select>
+        <option>Uno</option>
+        <option>Dos</option>
+        <option>Tres</option>
+    </select>
+    
+    &nbsp;
+    
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    
+    <br /><br />
+                
+    <select>
+        <option>Something</option>
+        <option>Something a little bit longer</option>
+        <option>something medium</option>
+    </select>
+    
+</div>
+
+​
+
+</body>
+</html>
+
