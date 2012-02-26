@@ -1,14 +1,8 @@
 #Fancy Select  
-######<em>Custom select boxes that retain native functionality</em>  
 
-<br />
-[ Work in progress ]
-<br />
-<br />
+Custom select boxes that retain native functionality. Very much a work in progress.  
 
 <a href="http://www.stuffmadeofthings.com/fancyselect/" target="_blank">View Demo &rarr;</a>
-<br />
-<br />
 
 ###Requirements
 - Allow full custom-styled select elements, primarily through CSS
@@ -20,3 +14,4 @@
 ###To do
 - Cross-browser fixes
 - Smarter plugin implementation
+- Testing, testing testing
