@@ -1,6 +1,6 @@
 #Fancy Select  
 
-Custom select boxes that retain native functionality. Very much a work in progress.  
+Custom select boxes that retain native functionality. A work in progress.  
 
 <a href="http://www.stuffmadeofthings.com/fancyselect/" target="_blank">View Demo &rarr;</a>
 
