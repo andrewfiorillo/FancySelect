@@ -6,8 +6,8 @@ $.fn.fancyselect = function() {
 	else if ($.browser.msie) browser = "msie";
 	else if ($.browser.opera) browser = "opera";
 
-    this.each(function(i,select){
-        $(select).wrap('<span class="fancyselect ' + browser +'" />');
+    this.each(function(i,select){		
+        $(select).wrap('<span class="fancyselect ' + browser + ' ' + navigator.platform + '" />');
         $(select).before('<span class="arrows" />');
         $(select).focus(function(){
             $(this).parent('span').addClass('focus');
