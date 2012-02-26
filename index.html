@@ -10,24 +10,10 @@
 	<link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/fancyselect.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			
-			$.fn.fancyselect = function() {
-			    this.each(function(i,select){
-			        $(select).wrap('<span class="fancyselect" />');
-			        $(select).before('<span class="arrows" />');
-			        $(select).focus(function(){
-			            $(this).parent('span').addClass('focus');
-			        });
-			        $(select).blur(function(){
-			            $(this).parent('span').removeClass('focus');
-			        });
-			    });
-			};
-		
 			$("#wrapper select").fancyselect();
-			
 		});
 	</script>
 	
