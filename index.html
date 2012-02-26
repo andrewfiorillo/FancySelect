@@ -9,11 +9,20 @@
 	<link rel="stylesheet" href="css/default.css" type="text/css" />
 	<link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
 	
+	<style type="text/css">
+		#wrapper {
+			background: #f6f6f6;
+			padding: 40px;
+			margin: 40px;
+		}
+	</style>
+	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/fancyselect.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#wrapper select").fancyselect();
+			console.log(jQuery.browser);
 		});
 	</script>
 	
