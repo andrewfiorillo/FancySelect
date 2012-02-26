@@ -2,12 +2,14 @@
 
 Custom select boxes that retain native functionality. A work in progress.  
 
-<a href="http://www.stuffmadeofthings.com/fancyselect/" target="_blank">View Demo &rarr;</a>
+<a href="http://www.stuffmadeofthings.com/fancyselect/" target="_blank">View Demo</a>
+|
+<a href="https://github.com/andrewfiorillo/FancySelect/zipball/master" target="_blank">Download</a>
 
 
 ##Premise
 
-- Allow full custom-styled select elements, primarily through CSS
+- Allow fully custom-styled select elements, primarily through CSS
 - Minimal additional markup
 - Minimal js needed
 - Retain (not recreate) native functionality like tabbing, keyboard control, and native dropdown menu
