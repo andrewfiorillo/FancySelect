@@ -14,9 +14,10 @@
 	overflow: hidden;
 }
 .fancyselect select, .selecttext {
-	border: 0;
 	background: none;
 	padding: 5px;
+	border: 0;
+	margin: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: #555;
@@ -47,6 +48,6 @@
 }
 .fancyselect.disabled .selecttext,
 .fancyselect.disabled select {
-	color: #999;
+	color: #bbb;
 	cursor: default;
 }
