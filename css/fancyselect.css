@@ -24,6 +24,7 @@
 	height: 26px;
 	position: relative;
 	cursor: pointer;
+	text-align: left;
 }
 .selecttext {
 	position: absolute;
@@ -40,21 +41,6 @@
 	top: 8px;
 	right: 8px;
 }
-
-/* Pixel ratio of 2. Background-size is 1/2 = 50% (of a 200px image) */
-@media
-	only screen and (-moz-min-device-pixel-ratio: 2), 
-	only screen and (-o-min-device-pixel-ratio: 2/1), 
-	only screen and (-webkit-min-device-pixel-ratio: 2), 
-	only screen and (min-device-pixel-ratio: 2) {
-	.fancyselect .arrows {
-		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNrc00sKACAIBNC8lvfXaxkERdEHc1o1W3kbHcnMUiS0g6paB8TMPtihtMMTXKAlHuABTbhBBxpwgReoYRIRe3qOnyC0nNA5oAJAlYNKDr0V9MieZAEGADRBax9ga1hcAAAAAElFTkSuQmCC) 0 0 no-repeat;
-		background-size: 100%;
-	}
-	.selecttext {
-		-webkit-text-resize: none;	
-	}
-}
 .fancyselect.focus {
 	border: 1px solid #96b7ff;
 	-moz-box-shadow: 0 0 4px rgba(150,183,255,0.7), 0 1px 1px rgba(0,0,0,0.05);
@@ -65,4 +51,17 @@
 .fancyselect.disabled select {
 	color: #bbb;
 	cursor: default;
+}
+
+/*iOS*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+	.fancyselect .arrows {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNrc00sKACAIBNC8lvfXaxkERdEHc1o1W3kbHcnMUiS0g6paB8TMPtihtMMTXKAlHuABTbhBBxpwgReoYRIRe3qOnyC0nNA5oAJAlYNKDr0V9MieZAEGADRBax9ga1hcAAAAAElFTkSuQmCC) 0 0 no-repeat;
+		background-size: 100%;
+	}
+}
+.fancyselect.ios select {
+	padding-right: 25px;
+	-webkit-text-size-adjust: none;
 }
