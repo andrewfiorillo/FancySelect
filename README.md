@@ -1,8 +1,8 @@
 #Fancy Select  
 
-Custom select boxes that retain native functionality. A work in progress.  
+Custom select boxes that retain native functionality.
 
-<a href="http://www.stuffmadeofthings.com/fancyselect/" target="_blank">View Demo</a>
+<a href="http://select.andrewfiorillo.com" target="_blank">View Demo</a>
 |
 <a href="https://github.com/andrewfiorillo/FancySelect/zipball/master" target="_blank">Download</a>
 
@@ -11,32 +11,57 @@ Custom select boxes that retain native functionality. A work in progress.
 
 - Allow fully custom-styled select elements, primarily through CSS
 - Minimal additional markup
-- Minimal js needed
-- Retain (not recreate) native functionality like tabbing, keyboard control, and native dropdown menu
-- Degrade gracefully for browsers that don't support (IE6 and IE7)
+- Retain (not recreate) native functionality like tabbing, disabled selects, keyboard control, and native dropdown menu
+- Support mobile browsers that handle select interaction differently
 
 
 ##Usage
 
-include fancyselect.css, jquery.js, and fancyselect.js:
-
+include fancyselect.css, jquery.js, and fancyselect.js
 ```html
 <link rel="stylesheet" href="css/fancyselect.css" type="text/css" />  
 <script type="text/javascript" src="js/jquery.js"></script>  
 <script type="text/javascript" src="js/fancyselect.js"></script>  
 ```
 
-Call fancyselect on the selects you want to style:
-
+Call fancyselect on the selects you want to style
 ```JavaScript
 $(document).ready(function() {
-	$("#wrapper select").fancyselect();
+	$("select").fancyselect();
 });
+```
+disable
+```JavaScript
+$("select").fancyselect('enable');
+// disables a select
+```
+enable
+```JavaScript
+$("select").fancyselect('enable');
+// enables a disabled select
+```
+destroy
+```JavaScript
+$("select").fancyselect('destroy');
+// removes and unbinds fancyselect
 ```
 
 
-##Still to do
-- Cross-browser fixes
-- Smarter plugin implementation
-- Testing, testing testing 
+##How it works
 
+The plugin adds a bit of markup around each select:
+```html
+<span class="fancyselect">
+	<span class="arrows"></span>
+	<span class="selecttext"></span>
+	<select></select>
+</span>
+```				
+					
+The select is made transparent and set above the other elements, this way it is still clickable. The styles you see are applied the elements below it. This method also allows mobile browsers to handle selects exactly as the usually would, which would be an issue if we recreated this bit with other html elements and js, simulating a select box.
+
+There are a few pieces of functionality that are converted to javascript though, for maximum cross-browser compatibility:
+
+- The updating of the visible text (since the select is transparent)
+- Focus/blur styles (a class is added/removed to the wrapped element for styling)
+- Disabling selects (a class is added/removed to the wrapped element for styling)
