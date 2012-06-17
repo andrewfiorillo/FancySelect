@@ -51,6 +51,9 @@
 		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNrc00sKACAIBNC8lvfXaxkERdEHc1o1W3kbHcnMUiS0g6paB8TMPtihtMMTXKAlHuABTbhBBxpwgReoYRIRe3qOnyC0nNA5oAJAlYNKDr0V9MieZAEGADRBax9ga1hcAAAAAElFTkSuQmCC) 0 0 no-repeat;
 		background-size: 100%;
 	}
+	.selecttext {
+		-webkit-text-resize: none;	
+	}
 }
 .fancyselect.focus {
 	border: 1px solid #96b7ff;
