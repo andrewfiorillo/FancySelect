@@ -2,8 +2,9 @@
 	
 	var methods = {
 		init: function() {
+			var platform = /(iphone|ipod|ipad)/.test(navigator.userAgent.toLowerCase()) ? ' ios' : '';
 			return this.each(function(i,el) {
-				$(el).wrap('<span class="fancyselect" />')
+				$(el).wrap('<span class="fancyselect'+ platform +'" />')
 					.before('<span class="arrows" />')
 					.before('<span class="selecttext" />')
 					.fadeTo(0,0)

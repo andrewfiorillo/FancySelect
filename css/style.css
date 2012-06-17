@@ -8,7 +8,7 @@ body {
 }
 #wrapper {
 	margin: 0 auto;
-	width: 400px;
+	width: 100%;
 }
 h1 {
 	text-align: center;
