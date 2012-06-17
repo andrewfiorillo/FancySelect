@@ -7,10 +7,9 @@ Custom select boxes that retain native functionality.
 <a href="https://github.com/andrewfiorillo/FancySelect/zipball/master" target="_blank">Download</a>
 
 
-##Premise
+##Features
 
-- Allow fully custom-styled select elements, primarily through CSS
-- Minimal additional markup
+- Allow fully custom-styled select elements
 - Retain (not recreate) native functionality like tabbing, disabled selects, keyboard control, and native dropdown menu
 - Support mobile browsers that handle select interaction differently
 
@@ -58,7 +57,7 @@ The plugin adds a bit of markup around each select:
 </span>
 ```				
 					
-The select is made transparent and set above the other elements, this way it is still clickable. The styles you see are applied the elements below it. This method also allows mobile browsers to handle selects exactly as the usually would, which would be an issue if we recreated this bit with other html elements and js, simulating a select box.
+The select is made transparent and set above the other elements, this way it is still clickable. The styles you see are applied the elements below it. This method also allows mobile browsers to handle selects exactly as the usually would (e.g. dialog in Android or ios style menu), which would be an issue if we recreated this bit with other html elements and js, simulating a select box.
 
 There are a few pieces of functionality that are converted to javascript though, for maximum cross-browser compatibility:
 
