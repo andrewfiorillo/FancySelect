@@ -58,7 +58,7 @@ The plugin adds a bit of markup around each select:
 </span>
 ```				
 					
-The select is made transparent and set above the other elements, this way it is still clickable. The styles you see are applied the elements below it. This method also allows mobile browsers to handle selects exactly as the usually would (e.g. dialog in Android or ios style menu), which would be an issue if we recreated this bit with other html elements and js, simulating a select box.
+The select is made transparent and set above the other elements, this way it is still clickable. The styles you see are applied the elements below it. This method also allows mobile browsers to handle selects exactly as the usually would (e.g. dialog in Android or ios picker), which would be an issue if we recreated this bit with other html elements and js, simulating a select box.
 
 There are a few pieces of functionality that are converted to javascript though, for maximum cross-browser compatibility:
 
