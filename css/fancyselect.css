@@ -32,13 +32,25 @@
 	line-height: 26px;
 }
 .fancyselect .arrows {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QURGODFFOTU3MjgxMUUxQjBCMkZCOTU5OTkzODVBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QURGODFFQTU3MjgxMUUxQjBCMkZCOTU5OTkzODVBQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRBNzBDMUM0NTY5RjExRTFCMEIyRkI5NTk5OTM4NUFDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhBREY4MUU4NTcyODExRTFCMEIyRkI5NTk5OTM4NUFDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+b05x8QAAAEpJREFUeNp8kIEKAEEERIfuq/w/vzWb67ac1r6SMUIBSexwd9Za8RERrDnRbtRachUGJHdPKC48/d5v0szk1Ehft+iNV9yesAQYAOC/RCWRWPXTAAAAAElFTkSuQmCC) 0 0 no-repeat;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAYAAAB4zEQNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNp8T9sJwEAIa6RTuT+ulV4EWznq5SshDxEkr0JESMDdU9tmCFw8CdRsRgdsMHLhVmIwv5t/UJOn5jSLmt0Dqa0eboE3+AgwAHN7GgmNZ9fsAAAAAElFTkSuQmCC) 0 0 no-repeat;
 	display: block;
 	width: 7px;
 	height: 10px;
 	position: absolute;
 	top: 8px;
 	right: 8px;
+}
+
+/* Pixel ratio of 2. Background-size is 1/2 = 50% (of a 200px image) */
+@media
+	only screen and (-moz-min-device-pixel-ratio: 2), 
+	only screen and (-o-min-device-pixel-ratio: 2/1), 
+	only screen and (-webkit-min-device-pixel-ratio: 2), 
+	only screen and (min-device-pixel-ratio: 2) {
+	.fancyselect .arrows {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNrc00sKACAIBNC8lvfXaxkERdEHc1o1W3kbHcnMUiS0g6paB8TMPtihtMMTXKAlHuABTbhBBxpwgReoYRIRe3qOnyC0nNA5oAJAlYNKDr0V9MieZAEGADRBax9ga1hcAAAAAElFTkSuQmCC) 0 0 no-repeat;
+		background-size: 100%;
+	}
 }
 .fancyselect.focus {
 	border: 1px solid #96b7ff;

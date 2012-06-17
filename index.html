@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<title></title>
+	
+	<title>Styling Select Boxes</title>
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- <link rel="stylesheet" href="css/default.css" type="text/css" /> -->
-	<link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
 	
-	<style type="text/css">
-		body {
-			background: white;
-			text-align: center;
-			font-family: "proxima nova", "helvetica neue", helvetica, arial, sans-serif;
-			font-size: 13px;
-			color: #333;
-			padding: 20px;
-		}
-		#wrapper {
-			margin: 0 auto;
-			width: 400px;
-		}
-		h1 {
-			text-align: center;
-			font-size: 22px;
-			font-weight: 600;
-		}
-	</style>
+	<link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/fancyselect.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$("select").fancyselect();
+		$(document).ready(function() {			
+			$('select').fancyselect();
 		});
 	</script>
 	
@@ -46,49 +26,40 @@
 		<h1>Styling Select Boxes</h1>
 		<br />
 		<br />
-
+		
 		<select>
 			<option>One</option>
 			<option>Two</option>
 			<option>The</option>
 		</select>
-		
 		&nbsp;
-		
 		<select>
 			<option>Uno</option>
 			<option>Dos</option>
 			<option>Tres</option>
 		</select>
-		
 		&nbsp;
-		
 		<select>
 			<option>1</option>
 			<option>2</option>
 			<option>3</option>
 		</select>
+		<br />	
 		
-		<br /><br />
-					
 		<select>
 			<option>Something</option>
 			<option>Something a little bit longer</option>
 			<option>something medium</option>
 		</select>
+		<br />			
 		
-		<br /><br />
-					
 		<select disabled="disabled">
-			<option>Something</option>
-			<option>Something a little bit longer</option>
-			<option>something medium</option>
+			<option>disabled</option>
+			<option>lorem</option>
+			<option>lorem ipsum dolor</option>
 		</select>
 		
 	</div>
-
-​
-
+	
 </body>
 </html>
-

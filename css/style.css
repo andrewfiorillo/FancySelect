@@ -1,0 +1,21 @@
+body {
+	background: white;
+	text-align: center;
+	font-family: "proxima nova", "helvetica neue", helvetica, arial, sans-serif;
+	font-size: 13px;
+	color: #333;
+	padding: 20px;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 400px;
+}
+h1 {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 600;
+}
+.fancyselect {
+	margin: 0 auto 20px auto;
+	vertical-align: middle;
+}
