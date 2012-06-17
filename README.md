@@ -12,6 +12,7 @@ Custom select boxes that retain native functionality.
 - Allow fully custom-styled select elements
 - Retain (not recreate) native functionality like tabbing, disabled selects, keyboard control, and native dropdown menu
 - Support mobile browsers that handle select interaction differently
+- Selects without a width set expand to the width of the longest option (as a standard select would)
 
 
 ##Usage
