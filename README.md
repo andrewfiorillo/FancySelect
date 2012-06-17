@@ -32,7 +32,7 @@ $(document).ready(function() {
 ```
 disable
 ```JavaScript
-$("select").fancyselect('enable');
+$("select").fancyselect('disable');
 // disables a select
 ```
 enable
