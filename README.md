@@ -1,4 +1,4 @@
-#Fancy Select  
+# Fancy Select  
 
 Custom select boxes that retain native functionality.
 
@@ -7,7 +7,7 @@ Custom select boxes that retain native functionality.
 <a href="https://github.com/andrewfiorillo/FancySelect/zipball/master" target="_blank">Download</a>
 
 
-##Features
+## Features
 
 - Allow fully custom-styled select elements
 - Retain (not recreate) native functionality like tabbing, disabled selects, keyboard control, and native dropdown menu
@@ -15,7 +15,7 @@ Custom select boxes that retain native functionality.
 - Selects without a width set expand to the width of the longest option (as a standard select would)
 
 
-##Usage
+## Usage
 
 include fancyselect.css, jquery.js, and fancyselect.js
 ```html
@@ -47,7 +47,7 @@ $("select").fancyselect('destroy');
 ```
 
 
-##How it works
+## How it works
 
 The plugin adds a bit of markup around each select:
 ```html
